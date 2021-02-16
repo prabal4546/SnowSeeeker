@@ -12,6 +12,8 @@
 		916067E425DB913D00F97793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916067E325DB913D00F97793 /* Assets.xcassets */; };
 		916067E725DB913D00F97793 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916067E625DB913D00F97793 /* Preview Assets.xcassets */; };
 		916067F025DB9E1800F97793 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 916067EF25DB9E1800F97793 /* resorts.json */; };
+		916067F325DBDEE100F97793 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916067F225DBDEE100F97793 /* Resort.swift */; };
+		916067F625DBDFE100F97793 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916067F525DBDFE100F97793 /* Bundle-Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		916067E625DB913D00F97793 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		916067E825DB913D00F97793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916067EF25DB9E1800F97793 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
+		916067F225DBDEE100F97793 /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
+		916067F525DBDFE100F97793 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				916067EF25DB9E1800F97793 /* resorts.json */,
 				916067E825DB913D00F97793 /* Info.plist */,
 				916067E525DB913D00F97793 /* Preview Content */,
+				916067F225DBDEE100F97793 /* Resort.swift */,
+				916067F525DBDFE100F97793 /* Bundle-Decodable.swift */,
 			);
 			path = SnowSeeker;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				916067E225DB913600F97793 /* ContentView.swift in Sources */,
+				916067F625DBDFE100F97793 /* Bundle-Decodable.swift in Sources */,
+				916067F325DBDEE100F97793 /* Resort.swift in Sources */,
 				916067E025DB913600F97793 /* SnowSeekerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
