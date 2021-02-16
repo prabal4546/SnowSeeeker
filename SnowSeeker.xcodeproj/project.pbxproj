@@ -15,6 +15,9 @@
 		916067F325DBDEE100F97793 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916067F225DBDEE100F97793 /* Resort.swift */; };
 		916067F625DBDFE100F97793 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916067F525DBDFE100F97793 /* Bundle-Decodable.swift */; };
 		916067FB25DBFC1E00F97793 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916067FA25DBFC1E00F97793 /* WelcomeView.swift */; };
+		9160680025DC012500F97793 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916067FF25DC012500F97793 /* ResortView.swift */; };
+		9160680325DC054B00F97793 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9160680225DC054B00F97793 /* SkiDetailsView.swift */; };
+		9160680625DC05A000F97793 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9160680525DC05A000F97793 /* ResortDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		916067F225DBDEE100F97793 /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		916067F525DBDFE100F97793 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		916067FA25DBFC1E00F97793 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		916067FF25DC012500F97793 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
+		9160680225DC054B00F97793 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
+		9160680525DC05A000F97793 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +66,13 @@
 		916067DE25DB913600F97793 /* SnowSeeker */ = {
 			isa = PBXGroup;
 			children = (
+				916067FD25DC00E800F97793 /* Model */,
+				916067FE25DC00F000F97793 /* View */,
 				916067DF25DB913600F97793 /* SnowSeekerApp.swift */,
-				916067E125DB913600F97793 /* ContentView.swift */,
 				916067E325DB913D00F97793 /* Assets.xcassets */,
 				916067EF25DB9E1800F97793 /* resorts.json */,
 				916067E825DB913D00F97793 /* Info.plist */,
 				916067E525DB913D00F97793 /* Preview Content */,
-				916067F225DBDEE100F97793 /* Resort.swift */,
-				916067F525DBDFE100F97793 /* Bundle-Decodable.swift */,
-				916067FA25DBFC1E00F97793 /* WelcomeView.swift */,
 			);
 			path = SnowSeeker;
 			sourceTree = "<group>";
@@ -79,6 +83,27 @@
 				916067E625DB913D00F97793 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		916067FD25DC00E800F97793 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				916067F225DBDEE100F97793 /* Resort.swift */,
+				916067F525DBDFE100F97793 /* Bundle-Decodable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		916067FE25DC00F000F97793 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				916067FA25DBFC1E00F97793 /* WelcomeView.swift */,
+				916067E125DB913600F97793 /* ContentView.swift */,
+				916067FF25DC012500F97793 /* ResortView.swift */,
+				9160680225DC054B00F97793 /* SkiDetailsView.swift */,
+				9160680525DC05A000F97793 /* ResortDetailsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				916067FB25DBFC1E00F97793 /* WelcomeView.swift in Sources */,
+				9160680325DC054B00F97793 /* SkiDetailsView.swift in Sources */,
+				9160680625DC05A000F97793 /* ResortDetailsView.swift in Sources */,
 				916067E225DB913600F97793 /* ContentView.swift in Sources */,
 				916067F625DBDFE100F97793 /* Bundle-Decodable.swift in Sources */,
+				9160680025DC012500F97793 /* ResortView.swift in Sources */,
 				916067F325DBDEE100F97793 /* Resort.swift in Sources */,
 				916067E025DB913600F97793 /* SnowSeekerApp.swift in Sources */,
 			);
