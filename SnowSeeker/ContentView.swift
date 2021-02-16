@@ -24,7 +24,7 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.black, lineWidth: 1)
                         )
-
+ 
                     VStack(alignment: .leading) {
                         Text(resort.name)
                             .font(.headline)
@@ -34,6 +34,7 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("Resorts")
+            WelcomeView()
         }
 }
 }
