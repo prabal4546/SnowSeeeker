@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+extension String: Identifiable {
+    public var id: String { self }
+}
+
 struct ResortView: View {
     let resort:Resort
     @Environment(\.horizontalSizeClass) var sizeClass
+    @State private var selectedFacility: String?
     var body: some View {
         NavigationView{
             ScrollView(.vertical){
@@ -33,24 +38,34 @@ struct ResortView: View {
                     .font(.headline)
                     .foregroundColor(.secondary)
                     .padding(.top)
-                Group{
-                    Text(resort.description)
-                                            .padding(.vertical)
-
-                                        Text("Facilities")
-                                            .font(.headline)
-
-                    Text(ListFormatter.localizedString(byJoining: resort.facilities))
-                                            .padding(.vertical)
-                }
-                .padding(.horizontal)
+                    Group{
+                        Text(resort.description)
+                            .padding(.vertical)
+                        
+                        Text("Facilities")
+                            .font(.headline)
+                        
+                        HStack{ForEach(resort.facilities){facility in
+                            Facility.icon(for: facility)
+                                .font(.title)
+                                .onTapGesture {
+                                    self.selectedFacility = facility
+                                }
+                        }.padding(.vertical)}
+                    }
+                    .padding(.horizontal)
                 
             }
                 
             }
             .navigationBarTitle(Text("\(resort.name),\(resort.country)"),displayMode: .inline)
+            .alert(item: $selectedFacility){facility in
+                Facility.alert(for: facility)
+                
+            }
         }
     }
+    
 }
 
 struct ResortView_Previews: PreviewProvider {
