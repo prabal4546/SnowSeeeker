@@ -86,10 +86,10 @@ struct ContentView: View {
             .actionSheet(isPresented:$showingActionSheet){
                 ActionSheet(title: Text("Sort"),buttons:[
                                 .default(Text("Name"),action:{
-                                    self.sortType = "By Name"
+//                                    self.sortType = "By Name"
                                 }),
                                 .default(Text("Country"),action:{
-                                    self.sortType = "By Country"
+//                                    self.sortType = "By Country"
                                 }),
                                 .cancel()])
             }
