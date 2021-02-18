@@ -15,7 +15,7 @@ enum SortType: String,CaseIterable,Equatable{
 
 
 struct ContentView: View {
-    @State var sortType: SortType = .none
+    @State private var sortType: SortType = .none
     @State private var showingActionSheet = false
     var sortedResorts:[Resort]{
         switch sortType{
@@ -66,21 +66,24 @@ struct ContentView: View {
             }){
                 Image(systemName: "list.and.film")
                 Text("Sort")
-            },trailing:Button(action:{
+            }
+            ,trailing:Button(action:{
 
             }){
                 Image(systemName:"camera.filters")
                 Text("Filter")
             })
             .actionSheet(isPresented:$showingActionSheet){
-                ActionSheet(title: Text("Sort"), message: Text("Sort by"), buttons: [
-                                           .default(Text("Name")),
-                                .default(Text("Country"){
-                                    self.sortType = .byCountry
+                ActionSheet(title: Text("Sort"),buttons:[
+                                .default(Text("Name"),action:{
+                                    self.sortType = "By Name"
                                 }),
-                                           .cancel()
-                                       ])
+                                .default(Text("Country"),action:{
+                                    self.sortType = "By Country"
+                                }),
+                                .cancel()])
             }
+
             WelcomeView()
                 
         }.environmentObject(favorites)
