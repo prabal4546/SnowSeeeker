@@ -8,11 +8,16 @@
 import SwiftUI
 class Favorites: ObservableObject {
     private var resorts:Set<String>
-    private let saveKey = "Favorites"
+    static let saveKey = "Favorites"
     
     init() {
         // load our saved data
-
+//        if let data = UserDefaults.standard.data(forKey: Self.saveKey) {
+//              if let decoded = try? JSONDecoder().decode([Favorites].self, from: data) {
+//                  self.favorite = decoded
+//                  return
+//              }
+//          }
         // still here? Use an empty array
         self.resorts = []
     }
@@ -30,6 +35,9 @@ class Favorites: ObservableObject {
                 save()
     }
     func save(){
+        if let encoded = try? JSONEncoder().encode(resorts){
+            UserDefaults.standard.set(encoded,forKey: Self.saveKey)
+        }
         
     }
     

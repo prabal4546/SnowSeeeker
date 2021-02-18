@@ -12,10 +12,17 @@ enum SortType: String,CaseIterable,Equatable{
     case byName = "By Name"
     case byCountry = "By Country"
 }
+enum FilterType: String,CaseIterable,Equatable{
+    case none = "None"
+    case bySize = "By Size"
+    case byCountry = "By Country"
+    case byPrice = "By Price"
+}
 
 
 struct ContentView: View {
     @State private var sortType: SortType = .none
+    @State private var filterType: FilterType = .none
     @State private var showingActionSheet = false
     var sortedResorts:[Resort]{
         switch sortType{
@@ -28,6 +35,9 @@ struct ContentView: View {
             
         }
     }
+
+
+    
     @ObservedObject var favorites = Favorites()
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     var body: some View {
