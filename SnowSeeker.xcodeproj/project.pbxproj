@@ -19,6 +19,7 @@
 		9160680325DC054B00F97793 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9160680225DC054B00F97793 /* SkiDetailsView.swift */; };
 		9160680625DC05A000F97793 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9160680525DC05A000F97793 /* ResortDetailsView.swift */; };
 		9160680925DD4A1300F97793 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9160680825DD4A1300F97793 /* Facility.swift */; };
+		9160681025DD767000F97793 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9160680F25DD767000F97793 /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9160680225DC054B00F97793 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
 		9160680525DC05A000F97793 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
 		9160680825DD4A1300F97793 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		9160680F25DD767000F97793 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				916067F225DBDEE100F97793 /* Resort.swift */,
 				916067F525DBDFE100F97793 /* Bundle-Decodable.swift */,
 				9160680825DD4A1300F97793 /* Facility.swift */,
+				9160680F25DD767000F97793 /* Favorites.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				916067FB25DBFC1E00F97793 /* WelcomeView.swift in Sources */,
 				9160680325DC054B00F97793 /* SkiDetailsView.swift in Sources */,
 				9160680625DC05A000F97793 /* ResortDetailsView.swift in Sources */,
+				9160681025DD767000F97793 /* Favorites.swift in Sources */,
 				9160680925DD4A1300F97793 /* Facility.swift in Sources */,
 				916067E225DB913600F97793 /* ContentView.swift in Sources */,
 				916067F625DBDFE100F97793 /* Bundle-Decodable.swift in Sources */,

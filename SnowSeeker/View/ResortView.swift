@@ -13,6 +13,7 @@ extension String: Identifiable {
 
 struct ResortView: View {
     let resort:Resort
+    @EnvironmentObject var favorites:Favorites
     @Environment(\.horizontalSizeClass) var sizeClass
     @State private var selectedFacility: String?
     var body: some View {
@@ -54,6 +55,14 @@ struct ResortView: View {
                         }.padding(.vertical)}
                     }
                     .padding(.horizontal)
+                    Button(favorites.contains(resort) ? "Remove from Favorites":"Add to favorites"){
+                        if self.favorites.contains(self.resort){
+                            self.favorites.remove(self.resort)
+                        }else{
+                            self.favorites.add(self.resort)
+                        }
+                    }
+                    .padding()
                 
             }
                 
