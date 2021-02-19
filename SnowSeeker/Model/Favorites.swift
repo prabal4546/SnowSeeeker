@@ -6,18 +6,19 @@
 //
 
 import SwiftUI
-class Favorites: ObservableObject {
+
+class Favorites: ObservableObject,Codable {
     private var resorts:Set<String>
     static let saveKey = "Favorites"
     
     init() {
         // load our saved data
-//        if let data = UserDefaults.standard.data(forKey: Self.saveKey) {
-//              if let decoded = try? JSONDecoder().decode([Favorites].self, from: data) {
-//                  self.favorite = decoded
-//                  return
-//              }
-//          }
+        if let data = UserDefaults.standard.data(forKey: Self.saveKey) {
+              if let decoded = try? JSONDecoder().decode(Set<String>.self, from: data) {
+                  self.resorts = decoded
+                  return
+              }
+          }
         // still here? Use an empty array
         self.resorts = []
     }
